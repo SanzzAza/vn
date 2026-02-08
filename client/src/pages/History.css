@@ -1,0 +1,174 @@
+.history-page {
+  min-height: calc(100vh - 80px);
+  background-color: var(--secondary-color);
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  color: var(--text-secondary);
+}
+
+.history-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.history-item {
+  display: flex;
+  background-color: var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.history-item:hover {
+  box-shadow: 0 5px 15px rgba(229, 9, 20, 0.2);
+  transform: translateY(-3px);
+}
+
+.history-content {
+  display: flex;
+  gap: 1.5rem;
+  flex: 1;
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.history-poster {
+  width: 100px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.history-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.history-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.history-info h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.episode-name {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.watch-date {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+.play-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: center;
+  white-space: nowrap;
+}
+
+.play-btn:hover {
+  background-color: #cc0812;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: rgba(229, 9, 20, 0.2);
+  border: none;
+  color: var(--primary-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: var(--border-color);
+  border-radius: 8px;
+  color: var(--text-secondary);
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .history-content {
+    gap: 1rem;
+    padding: 0.75rem;
+  }
+
+  .history-poster {
+    width: 80px;
+    height: 120px;
+  }
+
+  .history-info h3 {
+    font-size: 0.95rem;
+  }
+
+  .play-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .delete-btn {
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 35px;
+    height: 35px;
+  }
+}

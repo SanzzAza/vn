@@ -1,0 +1,49 @@
+.search-page {
+  min-height: calc(100vh - 80px);
+  background-color: var(--secondary-color);
+  padding: 2rem 0;
+}
+
+.search-header {
+  margin-bottom: 2rem;
+}
+
+.search-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.search-header p {
+  color: var(--text-secondary);
+}
+
+.search-header strong {
+  color: var(--primary-color);
+}
+
+.search-results {
+  margin-bottom: 2rem;
+}
+
+.result-count {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.no-results {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: var(--border-color);
+  border-radius: 8px;
+  color: var(--text-secondary);
+}
+
+.load-more-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.load-more-container .btn {
+  display: inline-block;
+}
